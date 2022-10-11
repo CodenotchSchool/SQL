@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <script src="main.js" type="module"></script>
+    <title>Adicionales</title>
+</head>
+<body>
+    <header>
+        <h1>Mini Proyecto SQL</h1>
+        <ul>
+            <li><a href="../alumnos/index.html" >Alumnos</a></li>
+            <li><a href="../notas/index.html">Notas</a></li>
+            <li><a href="../adicionales/index.html" class="active">Adicionales</a></li>
+        </ul>
+    </header>
+    <!-- aquí faltarían los id de los inputs para usarlos con el js -->
+    <main>
+        <div class="form">
+            <h2>Adicionales</h2>
+            <form action="">
+                <input type="number" placeholder="ID de alumno o profesor" id="student-teacher-id">
+            </form>
+    
+            <div class="btns">
+                <button id="btn-getMedia">Media</button>
+                <button id="btn-getApuntadas">Apuntadas</button>
+                <button id="btn-getImpartidas">Impartidas</button>
+            </div>
+        </div>
+    </main>
+
+    <section>
+    <!-- Usa este contenedor y la clase card cuando hagas el innerHTML y ya estaría  -->
+        <div class="card-container" id="card-container">
+            <!-- <div class="card">
+                <h3>Paquito Gómez Álvarez</h3>
+                <ul>
+                    <li>ID: Carpintero</li>
+                    <li>ID Grupo: Español</li>
+                    <li>Año de admisión: 39</li>
+                </ul>
+            </div>      -->
+        </div>
+    </section>
+
+
+</body>
+</html>

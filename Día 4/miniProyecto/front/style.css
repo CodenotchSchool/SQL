@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --backgroud: #2d9f91;
+    --white: #fff;
+}
+
+body{
+    background: var(--backgroud);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 15vh;
+    width: 100vw;
+    color: var(--white);
+}
+
+header h1{
+    width: 70%;
+    padding-left: 50px;
+}
+
+header ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 20%;
+
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.active::before{
+    position: absolute;
+    content: '';
+    top: 20px;
+    left: 0;
+    width: 0%;
+    border-bottom: solid var(--white) 2px;
+    animation: subtittle 0.5s forwards;
+}
+
+@keyframes subtittle {
+    100%{
+        width: 100%;
+    }
+}
+
+main{
+    min-height: 85vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+}
+
+main .form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--white);
+    padding: 30px 15px 30px;
+    gap: 30px;
+    box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
+    height: 300px;
+    width: 350px;
+}
+main .form h2{
+    width: 100%;
+    text-align: center;
+    color: var(--backgroud);
+}
+
+main .form form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main .form form input[type="text"],
+main form input[type="number"],
+main .form form input[type="date"]{
+    border: none;
+    height: 20px;
+    padding: 6px;
+    border-radius: 4px;
+    background: var(--backgroud);
+    color: var(--white);
+}
+
+main .form form input[type="date"]::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 2px;
+    opacity: 0.9;
+    filter: invert(0.9);
+}
+
+main .form form input::placeholder { 
+    color: var(--white); 
+}
+main .form .btns{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main .form .btns button{
+    padding: 8px;
+    background: var(--white);
+    color: var(--backgroud);
+    border: solid var(--backgroud) 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    height: 35px;
+    width: 90px;
+}
+
+main .form .btns button:hover{
+    background: var(--backgroud);
+    color: var(--white);
+    border: none;
+}
+
+section{
+    width: 100vw;
+    min-height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section .card-container .card{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+    width: 300px;
+    background: var(--white);
+    padding: 10px;
+    margin-top: 20px;
+}
+section .card-container .card h3{
+    width: 100%;
+}
+section .card-container .card ul li{
+    list-style: none;
+}
