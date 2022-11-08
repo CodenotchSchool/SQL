@@ -1,5 +1,3 @@
-import Nota from "./nota.js";
-
 function postNota(){
 
     let date = document.getElementById("date").value;

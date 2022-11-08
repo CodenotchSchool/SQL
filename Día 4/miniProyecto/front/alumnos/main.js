@@ -1,5 +1,3 @@
-import Alumno from "./alumno.js";
-
 function postAlumno(){
 
     let first_name = document.getElementById("first_name").value;
