@@ -1,4 +1,4 @@
-export default class Nota{
+class Nota{
 
     constructor(student_id, mark_id, subject_id, mark, date){
         this.student_id = student_id;

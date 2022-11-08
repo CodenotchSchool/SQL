@@ -1,4 +1,4 @@
-export default class Alumno{
+class Alumno{
 
     constructor(first_name,last_name, group_id, student_id, admission_year){
         this.first_name = first_name;
